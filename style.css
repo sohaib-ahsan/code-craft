@@ -1,0 +1,191 @@
+/* Media query for screens with a max-width of 768px */
+@media screen and (max-width: 768px) {
+  /* Styles for container when screen size is 768px or less */
+  .container {
+    grid-template-columns: 1fr; /* Set grid template columns to 1 fraction */
+    height: auto; /* Set height to auto */
+  }
+
+  .droppable, /* Styles for droppable elements */
+.droppingArea, /* Styles for dropping areas */
+.codeArea {
+    /* Styles for code areas */
+    width: 100%; /* Set width to 100% */
+  }
+}
+
+/* Global styles for all elements */
+* {
+  box-sizing: border-box; /* Set box-sizing to border-box */
+  font-family: "Varela Round"; /* Set font-family to "Varela Round" */
+}
+
+/* Styles for body element */
+body {
+  background-color: transparent; /* Set background-color to transparent */
+  background-image: url(./images/bg.png); /* Set background-image to ./images/bg.png */
+}
+
+/* Styles for container element */
+.container {
+  box-shadow: none; /* Remove box-shadow */
+  display: flex; /* Set display to flex */
+  margin-top: 20px; /* Set margin-top to 20px */
+  width: 100%; /* Set width to 100% */
+  height: 620px; /* Set height to 620px */
+  justify-content: space-between; /* Set justify-content to space-between */
+}
+
+/* Styles for extensible elements */
+.extensible {
+  box-shadow: 2px 2px 3px #525252; /* Set box-shadow to 2px 2px 3px #525252 */
+  padding: 15px; /* Set padding to 15px */
+  text-align: center; /* Set text-align to center */
+  border-radius: 20px; /* Set border-radius to 20px */
+}
+
+/* Styles for droppable elements */
+.droppable {
+  width: 190px; /* Set width to 190px */
+  background-color: #05172b; /* Set background-color to #05172b */
+  color: white; /* Set color to white */
+}
+
+/* Styles for dropping areas */
+.droppingArea {
+  background-color: #e8e8e9; /* Set background-color to #e8e8e9 */
+  width: 440px; /* Set width to 440px */
+}
+
+.codeArea {
+  width: 680px; /* Set the width of the element to 680 pixels */
+  background-color: #e8e8e9; /* Set the background color to a light grey */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the child elements evenly */
+}
+
+.dropElements {
+  background-color: rgb(
+    2,
+    33,
+    66
+  ); /* Set the background color using RGB values */
+  box-sizing: none; /* Disable box-sizing property */
+  margin-top: 13px; /* Add margin on top of the element */
+  height: 55px; /* Set the height of the element to 55 pixels */
+  padding: 15px 25px; /* Set padding on the top and bottom to 15 pixels and left and right to 25 pixels */
+  text-align: center; /* Center the text inside the element */
+  border-radius: 10px; /* Set border radius to 10 pixels for rounded corners */
+  box-shadow: 1px 2px 3px #2d2c2c; /* Apply box shadow */
+}
+
+#variable {
+  margin-top: 20px; /* Add margin on top of the element */
+}
+
+.dropElements:active {
+  box-shadow: 0px 0px 5px #ffffff; /* Apply box shadow on active state */
+  border: 1px solid white; /* Set border to white on active state */
+}
+
+.dropElements:hover,
+.btn:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  background-color: #010e1f; /* Change background color on hover */
+}
+
+.dropper {
+  overflow: auto; /* Enable scrolling if content overflows */
+  position: relative; /* Set position to relative */
+  width: 95%; /* Set width to 95% of parent container */
+  background-color: white; /* Set background color to white */
+  height: 87%; /* Set height to 87% of parent container */
+  top: 15px; /* Add top margin of 15 pixels */
+  left: 3%; /* Add left margin of 3% */
+  right: 20%; /* Add right margin of 20% */
+  border: 3px solid grey; /* Set border to 3 pixels solid grey */
+  padding: 10px; /* Set padding to 10 pixels */
+  box-shadow: 0px 2px 6px #3b3b3b; /* Apply box shadow */
+}
+
+.dropper {
+  padding-top: 50%; /* Set top padding to 50% for a centered content */
+}
+
+/* Styles for spans inside elements with class 'container', excluding elements with IDs 'dropHere' and 'outSpan' */
+.container span:not(#dropHere, #outSpan) {
+  font-size: 20px;
+}
+
+/* Styles for element with ID 'dropHere' */
+#dropHere {
+  font-size: 18px;
+  opacity: 50%;
+}
+
+/* Styles for elements with class 'area1' */
+.area1 {
+  width: 53%;
+  height: 510px;
+}
+
+/* Styles for elements with class 'area2' */
+.area2 {
+  width: 44%;
+  height: 500px;
+}
+
+/* Styles for elements with classes 'actualCode' and 'output' */
+.actualCode,
+.output {
+  overflow: auto;
+  padding: 15px;
+  height: 510px;
+  width: 98%;
+  background-color: white;
+  border: 3px solid grey;
+  box-shadow: 0px 2px 6px #3b3b3b;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Styles for elements with class 'output' */
+.output {
+  margin-top: 27px;
+}
+
+/* Styles for element with ID 'd1' */
+#d1 {
+  margin-top: 10px;
+}
+
+/* Styles for element with ID 'outSpan' */
+#outSpan {
+  font-size: 22px;
+}
+
+/* Styles for elements with class 'btn' */
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(2, 33, 66);
+  border-radius: 25px;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+/* Styles for elements with class 'newElem' */
+.newElem {
+  padding-top: 8px;
+}
+
+/* Styles for elements with class 'dropExtend' */
+.dropExtend {
+  overflow: auto;
+  background-color: #00000030;
+  min-height: 50px;
+  padding: 1rem 0.25rem;
+  margin-top: 10px;
+}
